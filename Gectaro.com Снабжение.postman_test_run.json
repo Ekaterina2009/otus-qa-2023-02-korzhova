@@ -1,0 +1,330 @@
+{
+	"id": "cd092549-1f96-43b3-a70e-8368c6d666dc",
+	"name": "Gectaro.com Снабжение",
+	"timestamp": "2023-07-01T10:28:59.070Z",
+	"collection_id": "27423862-2c8a7d18-5211-4ed2-85fe-5ceea01456c2",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-07-01T10:28:50.058Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "8c1cef70-9653-4df3-bc9a-f5e4098a5b9a",
+			"name": "Request all orders",
+			"url": "https://api.gectaro.com/v1/projects/56932/orders",
+			"time": 1570,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1570
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0c5ef9ab-7c48-4278-b8c5-8510ac0e1253",
+			"name": "Request order pay provider",
+			"url": "https://api.gectaro.com/v1/projects/56932/resources/list?filter[order_id]=105033&expand=commentsCount,newCommentsCount,resourceRequests.resourceOrderItems.resourceOrder.contractor,resourceRequestCount,contractor,resourceRequest.resourceOrderItems.resourceOrder.contractor,typeBudget",
+			"time": 545,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				545
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "84eab05b-9e24-4fa4-9b33-41daf75ed273",
+			"name": "Request order from stock",
+			"url": "https://api.gectaro.com/v1/projects/56932/resources/list?filter[order_id]=105031&expand=commentsCount,newCommentsCount,resourceRequests.resourceOrderItems.resourceOrder.contractor,resourceRequestCount,contractor,resourceRequest.resourceOrderItems.resourceOrder.contractor,typeBudget",
+			"time": 433,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				433
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2ccaeb09-66f8-44d5-8e01-8cbae2f7a687",
+			"name": "Request order at the customer",
+			"url": "https://api.gectaro.com/v1/projects/56932/resources/list?filter[order_id]=105032&expand=commentsCount,newCommentsCount,resourceRequests.resourceOrderItems.resourceOrder.contractor,resourceRequestCount,contractor,resourceRequest.resourceOrderItems.resourceOrder.contractor,typeBudgetfilter[order_id]=105031&expand=commentsCount,newCommentsCount,resourceRequests.resourceOrderItems.resourceOrder.contractor,resourceRequestCount,contractor,resourceRequest.resourceOrderItems.resourceOrder.contractor,typeBudget",
+			"time": 418,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				418
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9731f490-886b-4a31-8713-44e568800a2d",
+			"name": "Request order status - draft",
+			"url": "https://api.gectaro.com/v1/projects/56932/resources/list?expand=commentsCount,newCommentsCount,resourceRequests.resourceOrderItems.resourceOrder.contractor,resourceRequestCount,contractor,resourceRequest.resourceOrderItems.resourceOrder.contractor,typeBudget&filter[order_id]=105034",
+			"time": 479,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				479
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1f327711-3ca2-499c-9a97-7f0b20f35f91",
+			"name": "Request order status - payment expected",
+			"url": "https://api.gectaro.com/v1/projects/56932/resources/list?expand=commentsCount,newCommentsCount,resourceRequests.resourceOrderItems.resourceOrder.contractor,resourceRequestCount,contractor,resourceRequest.resourceOrderItems.resourceOrder.contractor,typeBudget&filter[order_id]=105033",
+			"time": 486,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				486
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "51752595-e608-4e7d-9593-5469c295890c",
+			"name": "Request order status - paid",
+			"url": "https://api.gectaro.com/v1/projects/56932/resources/list?expand=commentsCount,newCommentsCount,resourceRequests.resourceOrderItems.resourceOrder.contractor,resourceRequestCount,contractor,resourceRequest.resourceOrderItems.resourceOrder.contractor,typeBudget&filter[order_id]=104938",
+			"time": 416,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				416
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e0675934-efe8-4911-989c-146efcacdcb3",
+			"name": "Request order status - paid? type = at the custumer",
+			"url": "https://api.gectaro.com/v1/projects/56932/resources/list?expand=commentsCount,newCommentsCount,resourceRequests.resourceOrderItems.resourceOrder.contractor,resourceRequestCount,contractor,resourceRequest.resourceOrderItems.resourceOrder.contractor,typeBudget&filter[order_id]=105032",
+			"time": 422,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				422
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1f1bcbfb-fa22-45ee-9fd3-9072ba0b04f8",
+			"name": "Request order status - paid? type = from stock",
+			"url": "https://api.gectaro.com/v1/projects/56932/resources/list?expand=commentsCount,newCommentsCount,resourceRequests.resourceOrderItems.resourceOrder.contractor,resourceRequestCount,contractor,resourceRequest.resourceOrderItems.resourceOrder.contractor,typeBudget&filter[order_id]=105031",
+			"time": 391,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				391
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "571188e9-4765-41e2-9844-348938a37b50",
+			"name": "Request all orders status - draft",
+			"url": "https://api.gectaro.com/v1/projects/56932/orders?expand=contractor,stock,resourceSummary,resourceOrderItems.resourceRequest.projectTasksResource,is_removable,projects&page=1&filter[status]=10&filter[resource_name]=&filter[date_from]=&filter[date_to]=&per-page=30",
+			"time": 459,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				459
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0123ebef-5e64-4f3e-b79c-85be2b2f76e4",
+			"name": "Request all orders status - payment expected",
+			"url": "https://api.gectaro.com/v1/projects/56932/orders?expand=contractor,stock,resourceSummary,resourceOrderItems.resourceRequest.projectTasksResource,is_removable,projects&page=1&filter[status]=20&filter[resource_name]=&filter[date_from]=&filter[date_to]=&per-page=30",
+			"time": 686,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				686
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e6961248-7557-42ca-a8cc-744cbd24b2ea",
+			"name": "Request all orders status - paid",
+			"url": "https://api.gectaro.com/v1/projects/56932/orders?expand=contractor,stock,resourceSummary,resourceOrderItems.resourceRequest.projectTasksResource,is_removable,projects&page=1&filter[status]=30&filter[resource_name]=&filter[date_from]=&filter[date_to]=&per-page=30",
+			"time": 562,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				562
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0dbf45cb-acea-46ee-a9a1-f9141221ee64",
+			"name": "Request order delivery status - delivery expected",
+			"url": "https://api.gectaro.com/v1/projects/56932/resources/list?filter[order_id]=105033&expand=commentsCount,newCommentsCount,resourceRequests.resourceOrderItems.resourceOrder.contractor,resourceRequestCount,contractor,resourceRequest.resourceOrderItems.resourceOrder.contractor,typeBudget",
+			"time": 478,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				478
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6bd88c20-fbee-474f-bc80-8c494cfd95c1",
+			"name": "Request order delivery status - taken to stock",
+			"url": "https://api.gectaro.com/v1/projects/56932/resources/list?filter[order_id]=104988&expand=commentsCount,newCommentsCount,resourceRequests.resourceOrderItems.resourceOrder.contractor,resourceRequestCount,contractor,resourceRequest.resourceOrderItems.resourceOrder.contractor,typeBudget",
+			"time": 413,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				413
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 7758,
+	"collection": {
+		"requests": [
+			{
+				"id": "8c1cef70-9653-4df3-bc9a-f5e4098a5b9a",
+				"method": "GET"
+			},
+			{
+				"id": "0c5ef9ab-7c48-4278-b8c5-8510ac0e1253",
+				"method": "GET"
+			},
+			{
+				"id": "84eab05b-9e24-4fa4-9b33-41daf75ed273",
+				"method": "GET"
+			},
+			{
+				"id": "2ccaeb09-66f8-44d5-8e01-8cbae2f7a687",
+				"method": "GET"
+			},
+			{
+				"id": "9731f490-886b-4a31-8713-44e568800a2d",
+				"method": "GET"
+			},
+			{
+				"id": "1f327711-3ca2-499c-9a97-7f0b20f35f91",
+				"method": "GET"
+			},
+			{
+				"id": "51752595-e608-4e7d-9593-5469c295890c",
+				"method": "GET"
+			},
+			{
+				"id": "e0675934-efe8-4911-989c-146efcacdcb3",
+				"method": "GET"
+			},
+			{
+				"id": "1f1bcbfb-fa22-45ee-9fd3-9072ba0b04f8",
+				"method": "GET"
+			},
+			{
+				"id": "571188e9-4765-41e2-9844-348938a37b50",
+				"method": "GET"
+			},
+			{
+				"id": "0123ebef-5e64-4f3e-b79c-85be2b2f76e4",
+				"method": "GET"
+			},
+			{
+				"id": "e6961248-7557-42ca-a8cc-744cbd24b2ea",
+				"method": "GET"
+			},
+			{
+				"id": "0dbf45cb-acea-46ee-a9a1-f9141221ee64",
+				"method": "GET"
+			},
+			{
+				"id": "6bd88c20-fbee-474f-bc80-8c494cfd95c1",
+				"method": "GET"
+			}
+		]
+	}
+}
